@@ -1,0 +1,277 @@
+/*Fuentes*/
+@font-face {
+	font-family: 'Quicksand';
+	src: url(../webfonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Quicksand-bold';
+	src: url(../webfonts/Quicksand-Bold.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f5f4f5;
+	/*Estilos estándar experimentales para la scrollbar (Principalmente Firefox)*/
+	scrollbar-color: rgba(0, 0, 0, .2) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+/* Estilos del scrollbar para motores Webkit y blink (Chrome, Safari, Opera...)*/
+body::-webkit-scrollbar {
+	width: 17px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 20px;
+	border: 3px solid #f5f4f5;
+}
+
+i {
+	vertical-align: middle; /*Alinear todos los iconos en el medio*/
+}
+
+/*Cabecera Principal*/
+#cabecera-principal {
+	width: 100%;
+	height: 60px;
+	background-color: #015bbe;
+	background: linear-gradient(to right, #0254ac 0%, #017bfe 50%, #0254ac 100%);
+	position: fixed;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	user-select: none;
+	z-index: 1;
+}
+
+	/*Botones de navegación*/
+#cabecera-principal nav ul {
+	float: left;
+	list-style: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0;
+}
+
+#cabecera-principal nav ul li {
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	background-color: transparent;
+	font-size: 15px;
+	border-radius: 0 0 12px 12px;
+}
+
+#cabecera-principal nav ul li a {
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: white;
+	padding: 0 15px;
+}
+
+#cabecera-principal nav ul li a i {
+	font-size: 1.6rem;
+	margin-right: 10px;
+}
+
+#cabecera-principal nav ul li:hover {
+	background-color: rgba(0, 0, 0, .1);
+	transition: .4s;
+}
+
+		/*Pestaña seleccionada*/
+#cabecera-principal .seleccionado, #cabecera-principal .seleccionado:hover {
+	background-color: rgba(0, 0, 0, .25);
+}
+
+#cabecera-principal .sel-izq {
+	border-radius: 0 12px 12px 12px;
+	box-shadow: 0px -30px 0px 0px rgba(0,0,0,0.25);
+}
+
+#cabecera-principal .sel-der {
+	border-radius: 12px 0 12px 12px;
+	box-shadow: 0px -30px 0px 0px rgba(0,0,0,0.25);
+}
+
+#cabecera-principal .btn-aux, #cabecera-principal .btn-aux:hover {
+	width: 25px;
+	height: 60px;
+	background-color: transparent;
+}
+
+	/*Botón de Perfil*/
+#cabecera-principal #btn-perfil {
+	float: right;
+	box-sizing: border-box;
+	height: 60px;
+	margin-right: 25px;
+	line-height: 60px;
+	background-color: transparent;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	border: 0px solid transparent;
+	border-radius: 12px;
+	color: white;
+	padding: 0 15px;
+}
+
+#cabecera-principal #btn-perfil i {
+	font-size: 1.6rem;
+	margin-right: 10px;
+}
+
+#cabecera-principal #btn-perfil:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+#cabecera-principal #btn-perfil:active {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+#cabecera-principal #btn-perfil:focus {
+	outline: none;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+/*Barra Lateral*/
+#barra-lateral {
+	position: fixed;
+	box-sizing: border-box;
+	width: 300px;
+	margin-top: 65px;
+	padding-top: 25px; 
+	user-select: none;
+}
+
+#barra-lateral nav ul {
+	list-style: none;
+	font-size: 0;
+}
+
+#barra-lateral nav ul li {
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-family: 'Quicksand-bold', sans-serif;
+	font-size: .9rem;
+	line-height: 50px;
+	border-radius: 0 9px 9px 0;
+}
+
+#barra-lateral nav ul li a {
+	display: block;
+	padding: 0 20px;
+	color: #7E7E7E;
+	text-decoration: none;
+}
+
+#barra-lateral nav ul li i {
+	font-size: 1.4rem;
+	margin-right: 10px;
+}
+
+#barra-lateral nav ul li:hover {
+	background-color: rgba(0, 0, 0, .07);
+}
+
+#barra-lateral nav ul li:hover a {
+	color: #111;
+}
+
+#barra-lateral .seleccionado {
+	background-color: rgba(0, 0, 0, .07);
+}
+
+#barra-lateral .seleccionado a {
+	color: #111;
+}
+
+#barra-lateral .seleccionado a i {
+	color: #017bfe;
+}
+
+/*Contenido Principal*/
+.contenedor-principal {
+	position: absolute;
+	box-sizing: border-box;
+	margin: 90px 0 0 300px;
+	padding-left: 25px;
+	padding-right: 25px;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+}
+
+.contenido {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 25px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*Menu de Perfil*/
+.contenedor-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	background-color: rgba(0, 0, 0, .0);
+	z-index: 3;
+	transition: width 0s,
+				background-color .4s;
+	overflow-x: hidden;
+}
+
+.menu-perfil {
+	width: 0;
+	background-color: #f9f9f9;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	color: #495871;
+	transition: .4s;
+}
+
+.menu-perfil hr {
+	width: 90%;
+	background-color: #ddd;
+	height: 1px;
+	border: 0px solid transparent;
+	margin: 0 auto;
+}
+
+.menu-perfil .header {
+	height: 55px;
+	font-family: 'Quicksand-bold', sans-serif;
+}
+
+.menu-perfil .header .fa-times {
+	float: left;
+	line-height: 55px;
+	padding: 0 25px;
+	color: #C2C9D5;
+	cursor: pointer;
+	position: absolute;
+	transition: .4s;
+}
+
+.menu-perfil .header .fa-times:hover {
+	color: #495871;
+}
+
+.menu-perfil .header p {
+	text-align: center;
+	line-height: 55px;
+	font-size: 20px;
+}
