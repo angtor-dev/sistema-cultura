@@ -1,0 +1,178 @@
+/*Fuentes*/
+@font-face {
+	font-family: 'Montserrat-bold';
+	src: url(../webfonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat-extrabold';
+	src: url(../webfonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat-medium';
+	src: url(../webfonts/Montserrat-Medium.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #4ab8e0;
+
+}
+
+i {
+	vertical-align: middle; /*Alinear todos los iconos en el medio*/
+}
+
+.fondo {
+	position: fixed;
+	display: flex;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #3464cb;
+	background: linear-gradient(135deg, #41c3e7 0%, #3463cb 100%);
+	align-items: center;
+	justify-content: center;
+}
+
+.carta {
+	width: 700px;
+	height: 450px;
+	background-color: white;
+	box-shadow: 35px 35px 40px -5px rgba(0,0,0,0.25);
+}
+
+/*Parte Izquierda*/
+.cuerpo {
+	float: left;
+	box-sizing: border-box;
+	width: 400px;
+	height: 100%;
+	padding: 40px;
+	color: #444;
+	font-family: 'Montserrat-bold';
+}
+
+.cuerpo img { /*Logo esquina*/
+	height: 24px;
+	vertical-align: top;
+}
+
+.cuerpo .sicu-text {
+	font-size: 1.2rem;
+	font-family: 'Montserrat-extrabold';
+	margin-left: 2px;
+}
+
+.cuerpo .login-text {
+	display: block;
+	font-size: 34px;
+	margin: 40px 0 30px 0;
+}
+
+	/*Formulario*/
+.cuerpo .formulario span {
+	font-size: .9rem;
+}
+
+.cuerpo .formulario input[type="email"], .cuerpo .formulario input[type="password"] { /*Campo de correo y clave*/
+	display: block;
+	width: 280px;
+	padding: 0 0 5px 0;
+	font-family: 'Montserrat-medium';
+	font-size: .9em;
+	border: 0 solid transparent;
+	border-bottom: 3px solid #555;
+	margin: 25px 0;
+	transition: .3s;
+}
+
+.cuerpo .formulario input[type="password"] { /*Campo de Clave*/
+	letter-spacing: 4px;
+}
+
+.cuerpo .formulario input[type="email"]::placeholder, .cuerpo .formulario input[type="password"]::placeholder {
+	opacity: 1;
+	color: #bbb;
+	letter-spacing: initial;
+}
+
+.cuerpo .formulario input[type="email"]:focus, .cuerpo .formulario input[type="password"]:focus {
+	outline: none;
+	border-bottom-color: #3463cb;
+}
+
+.cuerpo .formulario input[type="submit"] { /*Boton para Ingresar*/
+	height: 35px;
+	width: 140px;
+	margin-top: 10px;
+	background: linear-gradient(135deg, #41c3e7 0%, #3463cb 50%, #41c3e7 100%);
+	background-size: 280px;
+	border: 0 solid transparent;
+	border-radius: 100px;
+	color: white;
+	font-family: 'Montserrat-bold';
+	cursor: pointer;
+	transition: .3s;
+}
+
+.cuerpo .formulario input[type="submit"]:hover {
+	background-position: -140px;
+}
+
+/*Parte Derecha*/
+.logo-derecha {
+	display: flex;
+	width: 300px;
+	height: 100%;
+	float: right;
+	box-sizing: border-box;
+	background: linear-gradient(135deg, #007BFF 0%, #004BE0 100%);
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 40px;
+	box-shadow: inset 40px 0px 40px -40px rgba(0, 0, 0 ,.3)
+}
+
+.logo-derecha .logo { /*Circulo Blanco donde va el Logo*/
+	display: flex;
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-derecha .logo:before { /*Anillo blanco del logo*/
+	content: '';
+	position: absolute;
+	width: 126px;
+	height: 126px;
+	border-radius: 50%;
+	border: 4px solid white;
+}
+
+.logo-derecha .logo img {
+	width: 80px;
+}
+
+.logo-derecha span {
+	margin-top: 20px;
+	font-family: 'Montserrat-bold';
+	font-size: 23px;
+	color: white;
+}
+
+.logo-derecha .bienvenido {
+	margin: 0 0 20px 0;
+	font-size: 26px;
+}
