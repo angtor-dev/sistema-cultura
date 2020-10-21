@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Inicio | SICU</title>
+	<title>Registrar usuario | SICU</title>
 	<meta charset="utf-8">
 	<link rel="Shortcut Icon" href="img/favicon.png">
 
@@ -16,20 +16,20 @@
 	<header id="cabecera-principal">
 		<nav> <!-- Botones de navegación -->
 			<ul>
-				<li class="btn-aux sel-izq">&nbsp;</li>
-				<li class="btn-h seleccionado"> <!-- Inicio -->
-					<a href="#">
+				<li class="btn-aux">&nbsp;</li>
+				<li class="btn-h sel-izq"> <!-- Inicio -->
+					<a href="index.html">
 						<i class="fas fa-home"></i>
 						<span>Inicio</span>
 					</a>
 				</li>
-				<li class="btn-h sel-der"> <!-- Usuarios -->
+				<li class="btn-h seleccionado"> <!-- Usuarios -->
 					<a href="usuarios.html">
 						<i class="fas fa-user-circle"></i>
 						<span>Usuarios</span>
 					</a>
 				</li>
-				<li class="btn-h"> <!-- Instrumentos -->
+				<li class="btn-h sel-der"> <!-- Instrumentos -->
 					<a href="instrumentos.html">
 						<i class="fas fa-guitar"></i>
 						<span>Instrumentos</span>
@@ -67,23 +67,11 @@
 	<div id="barra-lateral">
 		<nav>
 			<ul>
+				<li class="btn-bl">
+					<a href="usuarios.html"><i class="fas fa-user-alt"></i>Usuarios del Sistema</a>
+				</li>
 				<li class="btn-bl seleccionado">
-					<a href="#"><i class="fas fa-search"></i>Buscar instrumento</a>
-				</li>
-				<li class="btn-bl">
-					<a href="#"><i class="fas fa-pen"></i>Registrar Nuevo Instrumento</a>
-				</li>
-				<li class="btn-bl">
-					<a href="#"><i class="fas fa-list"></i>Instrumentos Prestados</a>
-				</li>
-				<li class="btn-bl">
-					<a href="#"><i class="fas fa-fan"></i>Opción número 4</a>
-				</li>
-				<li class="btn-bl">
-					<a href="#"><i class="fas fa-rocket"></i>Opción número 5</a>
-				</li>
-				<li class="btn-bl">
-					<a href="#"><i class="fas fa-car"></i>Opción 6</a>
+					<a href="usuarios-registrar.html"><i class="fas fa-user-plus"></i>Registrar Nuevo Usuario</a>
 				</li>
 			</ul>
 		</nav>
@@ -91,16 +79,48 @@
 
 	<!-- Contenido Principal -->
 	<section class="contenedor-principal">
-		<article class="contenido uno">
-			<center>Contenedor 1</center>
-		</article>
+		<article class="contenido">
+			<div class="titulo">
+				<h4>Registrar nuevo Usuario</h4>
+			</div>
 
-		<article class="contenido dos">
-			<center>Contenedor 2</center>
-		</article>
-
-		<article class="contenido tres">
-			<center>Contenedor 3</center>
+			<div class="cuerpo">
+				<form action="" method="">
+					<div>
+						<p><b>Nombre:</b></p>
+						<input type="text" name="nombre" placeholder="Ej: Simón">
+					</div>
+					
+					<div>
+						<p><b>Correo electrónico:</b></p>
+						<input type="email" name="correo" placeholder="ejemplo@email.com">
+					</div>
+					
+					<div>
+						<p><b>Apellido:</b></p>
+						<input type="text" name="apellido" placeholder="Ej: Rodríguez">
+					</div>
+					
+					<div>
+						<p><b>Contraseña:</b></p>
+						<input type="password" name="clave" placeholder="* * * * * * * * * *">
+					</div>
+					
+					<div class="grid-line">
+						<p><b>Tipo de Usuario:</b></p>
+						<select>
+							<option>Usuario</option>
+							<option>Administrador</option>
+						</select>
+					</div>
+					
+					<div>
+						<button class="boton" type="submit">Guardar</button>
+						<button class="boton" type="reset">Borrar</button>
+						<button class="boton" type="button">Cancelar</button>
+					</div>
+				</form>
+			</div>
 		</article>
 	</section>
 
