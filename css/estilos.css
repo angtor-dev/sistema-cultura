@@ -211,6 +211,7 @@ i {
 	right: 0;
 }
 
+	/*Contenedores principales*/
 .contenedor-principal .contenido {
 	box-sizing: border-box;
 	width: 100%;
@@ -222,6 +223,7 @@ i {
 	font-family: 'Montserrat-medium', sans-serif;
 }
 
+	/*Botones*/
 .contenedor-principal .contenido .boton {
 	padding: 10px 20px;
 	background-color: #017bfe;
@@ -238,6 +240,7 @@ i {
 	margin-right: 10px;
 }
 
+	/*Titulos de los contenedores*/
 .contenedor-principal .contenido .titulo {
 	margin: 0 0 25px 0;
 }
@@ -253,8 +256,9 @@ i {
 	margin-right: -10px;
 }
 
+	/*Cuerpo de los contenedores*/
 .contenedor-principal .contenido .cuerpo .boton {
-	margin-right: 20px;
+	margin:20px 20px 0 0;
 }
 
 .contenedor-principal .contenido .cuerpo p {
@@ -273,7 +277,7 @@ i {
 	grid-column-end: 3;
 }
 
-.contenedor-principal .contenido .cuerpo form input {
+.contenedor-principal .contenido .cuerpo form input, .contenedor-principal .contenido .cuerpo form select {
 	display: block;
 	width: 80%;
 	padding: 5px 0;
@@ -282,13 +286,17 @@ i {
 	border: 0 solid transparent;
 	border-bottom: 3px solid #000;
 	margin: 15px 0;
+	outline: none;
 	transition: .3s;
 }
 
-.contenedor-principal .contenido .cuerpo form input:focus {
-	outline: none;
+.contenedor-principal .contenido .cuerpo form input:focus, .contenedor-principal .contenido .cuerpo form select:focus {
 	border-bottom: 3px solid #017bfe;
 }
+
+.contenedor-principal .contenido .cuerpo form select {
+ 	width: 40%;
+ }
 
 /*Menu de Perfil*/
 .contenedor-menu {
