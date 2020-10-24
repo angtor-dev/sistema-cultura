@@ -1,10 +1,12 @@
-window.onload = init; //Se ejecita la función init() al terminar de carga la pagina
+window.onload = init; //Se ejecuta la función init() al terminar de carga la pagina
 
 // Variables:
 var estado_temas = false; //variable para saber el estado del menú "temas", por defecto cerrado
 
 // Funciones:
-function init() { //función que se ejecuta justo despues de cargar la pagina
+
+//función que se ejecuta justo despues de cargar la pagina
+function init() {
 	add_estilos();
 	add_eventos();
 }
@@ -15,6 +17,13 @@ function add_estilos() {
 	var botones = document.querySelectorAll('.btn-h, #btn-perfil, .btn-bl, .btn-bl a');
 	for(var i=0, l=botones.length; i<l; i++){
 		botones[i].style.transition = ".4s";
+	}
+	//Hacer los titulos responsive si hay botones en la esquina superior derecha
+	if (document.querySelector('.contenedor-principal .carta .titulo .boton')) {
+		var titulos = document.querySelectorAll('.contenedor-principal .carta .titulo h4');
+		for (var i = 0; i < titulos.length; i++) {
+			titulos[i].style.width = "calc(100% - 300px)";
+		}
 	}
 }
 
@@ -31,8 +40,8 @@ function add_eventos() {
 		})
 	}
 	//añade la funcion para regresar en el boton "cancelar" de los formularios, si existen
-	if (document.querySelector('.contenido .cuerpo form div .boton.cancelar')) {
-		document.querySelector('.contenido .cuerpo form div .boton.cancelar').addEventListener("click", function(){cancelar_registro(this.getAttribute('value'))})
+	if (document.querySelector('.carta .cuerpo form div .boton.cancelar')) {
+		document.querySelector('.carta .cuerpo form div .boton.cancelar').addEventListener("click", function(){cancelar_registro(this.getAttribute('value'))})
 	}
 }
 
@@ -73,6 +82,7 @@ function cambiar_tema(tema) {
 	document.getElementById('tema').href = tema;
 }
 
+//funcionalidad del boton "cancelar" en los registros
 function cancelar_registro(pagina) {
 	window.location.href = pagina + ".html";
 }

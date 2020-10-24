@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrar usuario | SICU</title>
+	<title>Instrumentos | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -17,20 +17,20 @@
 	<header id="cabecera-principal">
 		<nav> <!-- Botones de navegación -->
 			<ul>
-				<li class="btn-aux sel-izq">&nbsp;</li>
-				<li class="btn-h seleccionado"> <!-- Usuarios -->
+				<li class="btn-aux">&nbsp;</li>
+				<li class="btn-h sel-izq"> <!-- Usuarios -->
 					<a href="usuarios.html">
 						<i class="fas fa-user-circle"></i>
 						<span>Usuarios</span>
 					</a>
 				</li>
-				<li class="btn-h sel-der"> <!-- Instrumentos -->
+				<li class="btn-h seleccionado"> <!-- Instrumentos -->
 					<a href="instrumentos.html">
 						<i class="fas fa-guitar"></i>
 						<span>Instrumentos</span>
 					</a>
 				</li>
-				<li class="btn-h"> <!-- Integrantes -->
+				<li class="btn-h sel-der"> <!-- Integrantes -->
 					<a href="integrantes.html">
 						<i class="fas fa-male"></i>
 						<span>Integrantes</span>
@@ -62,11 +62,17 @@
 	<div id="barra-lateral">
 		<nav>
 			<ul>
-				<li class="btn-bl">
-					<a href="usuarios.html"><i class="fas fa-user-alt"></i>Usuarios del Sistema</a>
-				</li>
 				<li class="btn-bl seleccionado">
-					<a href="usuarios-registrar.html"><i class="fas fa-user-plus"></i>Registrar Nuevo Usuario</a>
+					<a href="instrumentos.html"><i class="fas fa-guitar"></i>Instrumentos</a>
+				</li>
+				<li class="btn-bl">
+					<a href="usuarios-registrar.html"><i class="fas fa-plus"></i>Registrar Instrumento</a>
+				</li>
+				<li class="btn-bl">
+					<a href="usuarios-registrar.html"><i class="fas fa-clipboard-list"></i>Prestamos</a>
+				</li>
+				<li class="btn-bl">
+					<a href="usuarios-registrar.html"><i class="fas fa-notes-medical"></i>Crear Prestamo</a>
 				</li>
 			</ul>
 		</nav>
@@ -75,46 +81,80 @@
 	<!-- Contenido Principal -->
 	<section class="contenedor-principal">
 		<article class="carta">
-			<div class="titulo">
-				<h4>Registrar nuevo Usuario</h4>
-			</div>
-
-			<div class="cuerpo">
-				<form action="" method="">
-					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="nombre" placeholder="Ej: Simón">
-					</div>
-					
-					<div>
-						<p><b>Correo electrónico:</b></p>
-						<input type="email" name="correo" placeholder="ejemplo@email.com">
-					</div>
-					
-					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodríguez">
-					</div>
-					
-					<div>
-						<p><b>Contraseña:</b></p>
-						<input type="password" name="clave" placeholder="* * * * * * * * * *">
-					</div>
-					
-					<div class="grid-line">
-						<p><b>Tipo de Usuario:</b></p>
-						<select>
-							<option>Usuario</option>
-							<option>Administrador</option>
-						</select>
-					</div>
-					
-					<div class="grid-line">
-						<button class="boton" type="submit"><i class="fas fa-check"></i>Guardar</button>
-						<button class="boton cancelar" type="button" value="usuarios"><i class="fas fa-times"></i>Cancelar</button>
-					</div>
-				</form>
-			</div>
+			<table class="tabla instrumentos">
+				<tr>
+					<th class="ins-cod row first">Código</th>
+					<th class="ins-nom row">Intrumento</th>
+					<th class="ins-mar row">Marca</th>
+					<th class="ins-dis row last">Disp.</th>
+				</tr>
+				<tr>
+					<td class="row first">G01</td>
+					<td class="row">Guitarra</td>
+					<td class="row">Helix</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">G02</td>
+					<td class="row">Guitarra</td>
+					<td class="row">Generica</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">C01</td>
+					<td class="row">Cuatro</td>
+					<td class="row">No posee</td>
+					<td class="row last"><i class="fas fa-times-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">C02</td>
+					<td class="row">Cuatro</td>
+					<td class="row">No posee</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">C03</td>
+					<td class="row">Cuatro</td>
+					<td class="row">Veneins</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">M01</td>
+					<td class="row">Mandolina</td>
+					<td class="row">Mandala</td>
+					<td class="row last"><i class="fas fa-times-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">TG01</td>
+					<td class="row">Tambor de Gaita</td>
+					<td class="row">San Simón</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">TG02</td>
+					<td class="row">Tambor de Gaita</td>
+					<td class="row">San Simón</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">F01</td>
+					<td class="row">Furro</td>
+					<td class="row">Artesanal</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">T01</td>
+					<td class="row">Teclado</td>
+					<td class="row">No posee</td>
+					<td class="row last"><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td class="row first">P01</td>
+					<td class="row">Piano</td>
+					<td class="row">Glorium</td>
+					<td class="row last"><i class="fas fa-times-circle"></i></td>
+				</tr>
+			</table>
 		</article>
 	</section>
 
