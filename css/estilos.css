@@ -313,23 +313,28 @@ i {
 
 .contenedor-principal .carta .tabla th {
 	text-align: left;
+	padding: 0 5px;
 }
 
 .contenedor-principal .carta .tabla td {
 	border-top: 1px solid #017bfe;
-	padding: 10px 0;
+	padding: 10px 5px;
 }
 
 .contenedor-principal .carta .tabla tr:hover td {
-	background-color: rgba(0, 0, 0, .06);
+	background-color: rgba(220, 230, 250, 1);
 }
 
-.contenedor-principal .carta .tabla .row.first {
+.contenedor-principal .carta .tabla td:first-child, .contenedor-principal .carta .tabla th:first-child {
 	padding-left: 30px;
 }
 
-.contenedor-principal .carta .tabla .row.last {
+.contenedor-principal .carta .tabla td:last-child, .contenedor-principal .carta .tabla th:last-child {
 	padding-right: 30px;
+}
+
+.contenedor-principal .carta .tabla tr:nth-child(even) { /*Columnas pares*/
+	background-color: rgba(0, 0, 0, .06);
 }
 
 .contenedor-principal .carta .tabla td i {
@@ -339,28 +344,41 @@ i {
 }
 
 /*Tabla de Instrumentos*/
-.contenedor-principal .carta .tabla .ins-cod {
+.contenedor-principal .carta .tabla.instrumentos th:nth-child(1) {
 	width: 20%;
 }
 
-.contenedor-principal .carta .tabla .ins-nom {
+.contenedor-principal .carta .tabla.instrumentos th:nth-child(2) {
 	width: 45%;
 }
 
-.contenedor-principal .carta .tabla .ins-mar {
+.contenedor-principal .carta .tabla.instrumentos th:nth-child(3) {
 	width: 30%;
 }
 
-.contenedor-principal .carta .tabla .ins-dis {
+.contenedor-principal .carta .tabla.instrumentos th:nth-child(4) {
 	width: 5%;
 }
 
-.contenedor-principal .carta .tabla td .fa-check-circle {
+.contenedor-principal .carta .tabla.instrumentos td .fa-check-circle {
 	color: #00DD00;
 }
 
-.contenedor-principal .carta .tabla td .fa-times-circle {
+.contenedor-principal .carta .tabla.instrumentos td .fa-times-circle {
 	color: #FF0000;
+}
+
+/*Tabla de integrantes de Grupos*/
+.contenedor-principal .carta .tabla.grupos th:nth-child(1) {
+	width: 20%;
+}
+
+.contenedor-principal .carta .tabla.grupos th:nth-child(2) {
+	width: 40%;
+}
+
+.contenedor-principal .carta .tabla.grupos th:nth-child(3) {
+	width: 40%;
 }
 
 /*Menu de Perfil*/
@@ -507,37 +525,8 @@ i {
 
 /*Seccion para el responsive*/
 
-/*Pantallas menores de 915px de ancho*/
-@media only screen and (max-width: 915px) {
-	/*Ajustar cabecera*/
-	#cabecera-principal nav ul li a {
-		padding: 0;
-	}
-
-	#cabecera-principal nav ul li a span {
-		display: none;
-	}
-
-	#cabecera-principal nav ul li a i {
-		width: 60px;
-		text-align: center;
-		margin-right: 0;
-	}
-
-	/*Restablecer ajustes del boton seleccionado*/
-	#cabecera-principal nav ul .btn-h.seleccionado a {
-		padding: 0 15px;
-	}
-
-	#cabecera-principal nav ul .btn-h.seleccionado a span {
-		display: initial;
-	}
-
-	#cabecera-principal nav ul .btn-h.seleccionado a i {
-		width: initial;
-		margin-right: 10px;
-	}
-
+/*Pantallas menores de 1100px de ancho*/
+@media only screen and (max-width: 1100px) {
 	/*Ajustar barra lateral*/
 	#barra-lateral {
 		width: 70px;
@@ -568,6 +557,38 @@ i {
 
 	.contenedor-principal {
 		margin: 90px 0 0 70px;
+	}
+}
+
+/*Pantallas menores de 915px de ancho*/
+@media only screen and (max-width: 915px) {
+	/*Ajustar cabecera*/
+	#cabecera-principal nav ul li a {
+		padding: 0;
+	}
+
+	#cabecera-principal nav ul li a span {
+		display: none;
+	}
+
+	#cabecera-principal nav ul li a i {
+		width: 60px;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	/*Restablecer ajustes del boton seleccionado*/
+	#cabecera-principal nav ul .btn-h.seleccionado a {
+		padding: 0 15px;
+	}
+
+	#cabecera-principal nav ul .btn-h.seleccionado a span {
+		display: initial;
+	}
+
+	#cabecera-principal nav ul .btn-h.seleccionado a i {
+		width: initial;
+		margin-right: 10px;
 	}
 }
 
