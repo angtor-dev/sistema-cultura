@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrar usuario | SICU</title>
+	<title>Integrantes | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -17,26 +17,26 @@
 	<header id="cabecera-principal">
 		<nav> <!-- Botones de navegación -->
 			<ul>
-				<li class="btn-aux sel-izq">&nbsp;</li>
-				<li class="btn-h seleccionado"> <!-- Usuarios -->
+				<li class="btn-aux">&nbsp;</li>
+				<li class="btn-h"> <!-- Usuarios -->
 					<a href="usuarios.html">
 						<i class="fas fa-user-circle"></i>
 						<span>Usuarios</span>
 					</a>
 				</li>
-				<li class="btn-h sel-der"> <!-- Instrumentos -->
+				<li class="btn-h sel-izq"> <!-- Instrumentos -->
 					<a href="instrumentos.html">
 						<i class="fas fa-guitar"></i>
 						<span>Instrumentos</span>
 					</a>
 				</li>
-				<li class="btn-h"> <!-- Integrantes -->
+				<li class="btn-h seleccionado"> <!-- Integrantes -->
 					<a href="integrantes.html">
 						<i class="fas fa-male"></i>
 						<span>Integrantes</span>
 					</a>
 				</li>
-				<li class="btn-h"> <!-- Grupos -->
+				<li class="btn-h sel-der"> <!-- Grupos -->
 					<a href="grupos.html">
 						<i class="fas fa-users"></i>
 						<span>Grupos</span>
@@ -62,11 +62,11 @@
 	<div id="barra-lateral">
 		<nav>
 			<ul>
-				<li class="btn-bl">
-					<a href="usuarios.html"><i class="fas fa-user-alt"></i>Usuarios del Sistema</a>
-				</li>
 				<li class="btn-bl seleccionado">
-					<a href="usuarios-registrar.html"><i class="fas fa-user-plus"></i>Registrar Nuevo Usuario</a>
+					<a href="integrantes.html"><i class="fas fa-male"></i>Integrantes</a>
+				</li>
+				<li class="btn-bl">
+					<a href="integrantes-registrar.html"><i class="fas fa-plus"></i>Registrar Integrante</a>
 				</li>
 			</ul>
 		</nav>
@@ -75,46 +75,62 @@
 	<!-- Contenido Principal -->
 	<section class="contenedor-principal">
 		<article class="carta">
-			<div class="titulo">
-				<h4>Registrar nuevo Usuario</h4>
-			</div>
-
-			<div class="cuerpo">
-				<form action="" method="">
-					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="nombre" placeholder="Ej: Simón">
-					</div>
-					
-					<div>
-						<p><b>Correo electrónico:</b></p>
-						<input type="email" name="correo" placeholder="ejemplo@email.com">
-					</div>
-					
-					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodríguez">
-					</div>
-					
-					<div>
-						<p><b>Contraseña:</b></p>
-						<input type="password" name="clave" placeholder="* * * * * * * * * *">
-					</div>
-					
-					<div class="grid-line">
-						<p><b>Tipo de Usuario:</b></p>
-						<select>
-							<option>Usuario</option>
-							<option>Administrador</option>
-						</select>
-					</div>
-					
-					<div class="grid-line">
-						<button class="boton" type="submit"><i class="fas fa-check"></i>Guardar</button>
-						<button class="boton cancelar" type="button" value="usuarios"><i class="fas fa-times"></i>Cancelar</button>
-					</div>
-				</form>
-			</div>
+			<table class="tabla integrantes">
+				<tr>
+					<th>Cedúla</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Clase</th>
+				</tr>
+				<tr>
+					<td>23.236.452</td>
+					<td>Willian</td>
+					<td>Gonzalo</td>
+					<td>Estudiante</td>
+				</tr>
+				<tr>
+					<td>32.216.154</td>
+					<td>Diana</td>
+					<td>Falcao</td>
+					<td>Docente</td>
+				</tr>
+				<tr>
+					<td>15.167.334</td>
+					<td>Rafael</td>
+					<td>Herrera</td>
+					<td>Estudiante</td>
+				</tr>
+				<tr>
+					<td>26.344.157</td>
+					<td>Hector</td>
+					<td>Lombardi</td>
+					<td>Obrero</td>
+				</tr>
+				<tr>
+					<td>30.298.772</td>
+					<td>Victor</td>
+					<td>Marchan</td>
+					<td>Administrativo</td>
+				</tr>
+				<tr>
+					<td>29.446.325</td>
+					<td>Estefania</td>
+					<td>Torres</td>
+					<td>Estudiante</td>
+				</tr>
+				<tr>
+					<td>19.449.376</td>
+					<td>Maria</td>
+					<td>Vernulli</td>
+					<td>Estudiante</td>
+				</tr>
+				<tr>
+					<td>14.215.398</td>
+					<td>Juan</td>
+					<td>Rodriguez</td>
+					<td>Docente</td>
+				</tr>
+			</table>
 		</article>
 	</section>
 
