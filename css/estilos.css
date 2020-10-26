@@ -281,7 +281,7 @@ i {
 	grid-column-end: 3;
 }
 
-.contenedor-principal .carta .cuerpo form input, .contenedor-principal .carta .cuerpo form select {
+.contenedor-principal .carta .cuerpo form input[type="text"], .contenedor-principal .carta .cuerpo form input[type="email"], .contenedor-principal .carta .cuerpo form input[type="password"], .contenedor-principal .carta .cuerpo form select {
 	display: block;
 	width: 80%;
 	padding: 5px 0;
@@ -299,6 +299,10 @@ i {
 }
 
 .contenedor-principal .carta .cuerpo form select {
+	width: 80%;
+}
+
+.contenedor-principal .carta .cuerpo form .grid-line select {
 	width: 40%;
 }
 
@@ -307,7 +311,7 @@ i {
 	width: 100%;
 	border-collapse: collapse;
 	border: 0px solid transparent;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding: 0 40px;
 }
 
@@ -379,6 +383,23 @@ i {
 
 .contenedor-principal .carta .tabla.grupos th:nth-child(3) {
 	width: 40%;
+}
+
+/*Tabla de integrantes*/
+.contenedor-principal .carta .tabla.integrantes th:nth-child(1) {
+	width: 20%;
+}
+
+.contenedor-principal .carta .tabla.integrantes th:nth-child(2) {
+	width: 30%;
+}
+
+.contenedor-principal .carta .tabla.integrantes th:nth-child(3) {
+	width: 30%;
+}
+
+.contenedor-principal .carta .tabla.integrantes th:nth-child(4) {
+	width: 20%;
 }
 
 /*Menu de Perfil*/
