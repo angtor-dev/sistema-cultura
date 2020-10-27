@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrar integrante | SICU</title>
+	<title>Registrar instrumento | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -18,25 +18,25 @@
 		<nav> <!-- Botones de navegación -->
 			<ul>
 				<li class="btn-aux">&nbsp;</li>
-				<li class="btn-h"> <!-- Usuarios -->
+				<li class="btn-h sel-izq"> <!-- Usuarios -->
 					<a href="usuarios.html">
 						<i class="fas fa-user-circle"></i>
 						<span>Usuarios</span>
 					</a>
 				</li>
-				<li class="btn-h sel-izq"> <!-- Instrumentos -->
+				<li class="btn-h seleccionado"> <!-- Instrumentos -->
 					<a href="instrumentos.html">
 						<i class="fas fa-guitar"></i>
 						<span>Instrumentos</span>
 					</a>
 				</li>
-				<li class="btn-h seleccionado"> <!-- Integrantes -->
+				<li class="btn-h sel-der"> <!-- Integrantes -->
 					<a href="integrantes.html">
 						<i class="fas fa-male"></i>
 						<span>Integrantes</span>
 					</a>
 				</li>
-				<li class="btn-h sel-der"> <!-- Grupos -->
+				<li class="btn-h"> <!-- Grupos -->
 					<a href="grupos.html">
 						<i class="fas fa-users"></i>
 						<span>Grupos</span>
@@ -63,10 +63,16 @@
 		<nav>
 			<ul>
 				<li class="btn-bl">
-					<a href="integrantes.html"><i class="fas fa-male"></i>Integrantes</a>
+					<a href="instrumentos.html"><i class="fas fa-guitar"></i>Instrumentos</a>
 				</li>
 				<li class="btn-bl seleccionado">
-					<a href="integrantes-registrar.html"><i class="fas fa-plus"></i>Registrar Integrante</a>
+					<a href="instrumentos-registrar.html"><i class="fas fa-plus"></i>Registrar Instrumento</a>
+				</li>
+				<li class="btn-bl">
+					<a href="prestamos.html"><i class="fas fa-clipboard-list"></i>Prestamos</a>
+				</li>
+				<li class="btn-bl">
+					<a href="prestamos-registrar.html"><i class="fas fa-notes-medical"></i>Crear Prestamo</a>
 				</li>
 			</ul>
 		</nav>
@@ -76,47 +82,46 @@
 	<section class="contenedor-principal">
 		<article class="carta">
 			<div class="titulo">
-				<h4>Registrar nuevo Integrante</h4>
+				<h4>Registrar nuevo Usuario</h4>
 			</div>
 
 			<div class="cuerpo">
 				<form action="" method="">
 					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="nombre" placeholder="Ej: Simón">
-					</div>
-
-					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodríguez">
+						<p><b>Instrumento:</b></p>
+						<input type="text" name="nombre" placeholder="Ej: Tambor de Gaita">
 					</div>
 					
 					<div>
-						<p><b>Cédula:</b></p>
-						<input type="text" name="cedula" placeholder="11.222.333">
+						<p><b>Codigo/Identificador:</b></p>
+						<input type="text" name="codigo" placeholder="Ej: TG001">
 					</div>
 					
 					<div>
-						<p><b>Clase:</b></p>
-						<select name="clase">
-							<option value="0">Seleccionar</option>
-							<option value="1">Estudiante</option>
-							<option value="2">Docente</option>
-							<option value="3">Obrero</option>
-							<option value="4">Administrativo</option>
+						<p><b>Clasificación:</b></p>
+						<select>
+							<option>Seleccionar</option>
+							<option>Cuerda</option>
+							<option>Electrico</option>
+							<option>Percusión</option>
+							<option>Viento</option>
 						</select>
 					</div>
-
-					<div class="grid-line">
-						<p><b>Grupos en los que participa:</b></p>
-						<label><input type="checkbox" name="grupos">Orfeón Universitario UPTAEB</label><br>
-						<label><input type="checkbox" name="grupos">Naguará e' Gaita</label><br>
-						<label><input type="checkbox" name="grupos">Cineclub Asdrúbal Meléndez</label>
+					
+					<div>
+						<p><b>Marca (si posee):</b></p>
+						<input type="text" name="marca" placeholder="Ej: Marca">
+					</div>
+					
+					<div>
+						<p><b>Disponibilidad:</b></p>
+						<label><input type="radio" name="disponibilidad" value="1">Disponible</label>
+						<label><input type="radio" name="disponibilidad" value="0">No Disponible</label>
 					</div>
 					
 					<div class="grid-line">
 						<button class="boton" type="submit"><i class="fas fa-check"></i>Guardar</button>
-						<button class="boton cancelar" type="button" value="integrantes"><i class="fas fa-times"></i>Cancelar</button>
+						<button class="boton cancelar" type="button" value="instrumentos"><i class="fas fa-times"></i>Cancelar</button>
 					</div>
 				</form>
 			</div>

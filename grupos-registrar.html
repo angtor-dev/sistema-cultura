@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrar integrante | SICU</title>
+	<title>Registrar grupo | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -24,25 +24,25 @@
 						<span>Usuarios</span>
 					</a>
 				</li>
-				<li class="btn-h sel-izq"> <!-- Instrumentos -->
+				<li class="btn-h"> <!-- Instrumentos -->
 					<a href="instrumentos.html">
 						<i class="fas fa-guitar"></i>
 						<span>Instrumentos</span>
 					</a>
 				</li>
-				<li class="btn-h seleccionado"> <!-- Integrantes -->
+				<li class="btn-h sel-izq"> <!-- Integrantes -->
 					<a href="integrantes.html">
 						<i class="fas fa-male"></i>
 						<span>Integrantes</span>
 					</a>
 				</li>
-				<li class="btn-h sel-der"> <!-- Grupos -->
+				<li class="btn-h seleccionado"> <!-- Grupos -->
 					<a href="grupos.html">
 						<i class="fas fa-users"></i>
 						<span>Grupos</span>
 					</a>
 				</li>
-				<li class="btn-h"> <!-- Actividades -->
+				<li class="btn-h sel-der"> <!-- Actividades -->
 					<a href="actividades.html">
 						<i class="fas fa-drum"></i>
 						<span>Actividades</span>
@@ -63,10 +63,10 @@
 		<nav>
 			<ul>
 				<li class="btn-bl">
-					<a href="integrantes.html"><i class="fas fa-male"></i>Integrantes</a>
+					<a href="grupos.html"><i class="fas fa-male"></i>Grupos Culturales</a>
 				</li>
 				<li class="btn-bl seleccionado">
-					<a href="integrantes-registrar.html"><i class="fas fa-plus"></i>Registrar Integrante</a>
+					<a href="grupos-registrar.html"><i class="fas fa-plus"></i>Registrar Grupo</a>
 				</li>
 			</ul>
 		</nav>
@@ -76,47 +76,47 @@
 	<section class="contenedor-principal">
 		<article class="carta">
 			<div class="titulo">
-				<h4>Registrar nuevo Integrante</h4>
+				<h4>Registrar nuevo Grupo</h4>
 			</div>
 
 			<div class="cuerpo">
 				<form action="" method="">
 					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="nombre" placeholder="Ej: Simón">
+						<p><b>Nombre del grupo:</b></p>
+						<input type="text" name="nombre" placeholder="Ej: Naguará e' Gaita">
 					</div>
 
 					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodríguez">
+						<p><b>Género:</b></p>
+						<input type="text" name="genero" placeholder="Ej: Salsa, Gaita, Cine, etc.">
 					</div>
 					
 					<div>
-						<p><b>Cédula:</b></p>
-						<input type="text" name="cedula" placeholder="11.222.333">
+						<p><b>Descripción:</b></p>
+						<textarea placeholder="Ingrese una descrición" rows="7"></textarea>
 					</div>
 					
 					<div>
-						<p><b>Clase:</b></p>
-						<select name="clase">
-							<option value="0">Seleccionar</option>
-							<option value="1">Estudiante</option>
-							<option value="2">Docente</option>
-							<option value="3">Obrero</option>
-							<option value="4">Administrativo</option>
-						</select>
-					</div>
-
-					<div class="grid-line">
-						<p><b>Grupos en los que participa:</b></p>
-						<label><input type="checkbox" name="grupos">Orfeón Universitario UPTAEB</label><br>
-						<label><input type="checkbox" name="grupos">Naguará e' Gaita</label><br>
-						<label><input type="checkbox" name="grupos">Cineclub Asdrúbal Meléndez</label>
+						<p><b>Integrantes: </b><a href="#">Añadir integrante</a></p>
+						<table class="tabla registro">
+							<tr>
+								<td>Julian Aguirre<span> x </span></td>
+							</tr>
+							<tr>
+								<td>Xiomara Escalona<span> x </span></td>
+							</tr>
+							<tr>
+								<td>Kelvin Linarez<span> x </span></td>
+							</tr>
+							<tr>
+								<td>Eduard Martinez<span> x </span>
+							</tr>
+						</table>
 					</div>
 					
 					<div class="grid-line">
 						<button class="boton" type="submit"><i class="fas fa-check"></i>Guardar</button>
-						<button class="boton cancelar" type="button" value="integrantes"><i class="fas fa-times"></i>Cancelar</button>
+						<button class="boton cancelar" type="button" value="grupos"><i class="fas fa-times"></i>Cancelar</button>
 					</div>
 				</form>
 			</div>

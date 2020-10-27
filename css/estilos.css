@@ -281,7 +281,7 @@ i {
 	grid-column-end: 3;
 }
 
-.contenedor-principal .carta .cuerpo form input[type="text"], .contenedor-principal .carta .cuerpo form input[type="email"], .contenedor-principal .carta .cuerpo form input[type="password"], .contenedor-principal .carta .cuerpo form select {
+.contenedor-principal .carta .cuerpo form input[type="text"], .contenedor-principal .carta .cuerpo form input[type="email"], .contenedor-principal .carta .cuerpo form input[type="password"], .contenedor-principal .carta .cuerpo form input[type="date"], .contenedor-principal .carta .cuerpo form input[type="time"], .contenedor-principal .carta .cuerpo form select, .contenedor-principal .carta .cuerpo form textarea {
 	display: block;
 	width: 80%;
 	padding: 5px 0;
@@ -294,7 +294,31 @@ i {
 	transition: .3s;
 }
 
-.contenedor-principal .carta .cuerpo form input:focus, .contenedor-principal .carta .cuerpo form select:focus {
+.contenedor-principal .carta .cuerpo form input[type="checkbox"] {
+	margin: 0 15px;
+}
+
+.contenedor-principal .carta .cuerpo form input[type="radio"] {
+	margin: 15px 5px;
+}
+
+.contenedor-principal .carta .cuerpo form textarea {
+	border: 1px solid #000;
+	border-bottom: 3px solid #000;
+}
+
+.contenedor-principal .carta .cuerpo form label {
+	line-height: 30px;
+	user-select: none;
+	margin-right: 20px;
+	transition: .3s;
+}
+
+.contenedor-principal .carta .cuerpo form label:hover {
+	color: #017bfe;
+}
+
+.contenedor-principal .carta .cuerpo form input:focus, .contenedor-principal .carta .cuerpo form select:focus, .contenedor-principal .carta .cuerpo form textarea:focus {
 	border-bottom: 3px solid #017bfe;
 }
 
@@ -304,6 +328,23 @@ i {
 
 .contenedor-principal .carta .cuerpo form .grid-line select {
 	width: 40%;
+}
+
+/*Tabla del formulario grupos*/
+.contenedor-principal .carta .cuerpo form .tabla.registro {
+	width: 80%;
+}
+
+.contenedor-principal .carta .cuerpo form div .tabla.registro td {
+	border: 0px solid transparent;
+}
+
+.contenedor-principal .carta .cuerpo form div .tabla.registro td span {
+	float: right;
+	line-height: 24px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 /*Tablas*/
@@ -374,32 +415,28 @@ i {
 
 /*Tabla de integrantes de Grupos*/
 .contenedor-principal .carta .tabla.grupos th:nth-child(1) {
-	width: 20%;
+	width: 25%;
 }
 
 .contenedor-principal .carta .tabla.grupos th:nth-child(2) {
-	width: 40%;
+	width: 50%;
 }
 
 .contenedor-principal .carta .tabla.grupos th:nth-child(3) {
-	width: 40%;
+	width: 25%;
 }
 
 /*Tabla de integrantes*/
 .contenedor-principal .carta .tabla.integrantes th:nth-child(1) {
-	width: 20%;
+	width: 25%;
 }
 
 .contenedor-principal .carta .tabla.integrantes th:nth-child(2) {
-	width: 30%;
+	width: 50%;
 }
 
 .contenedor-principal .carta .tabla.integrantes th:nth-child(3) {
-	width: 30%;
-}
-
-.contenedor-principal .carta .tabla.integrantes th:nth-child(4) {
-	width: 20%;
+	width: 25%;
 }
 
 /*Menu de Perfil*/
