@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrar instrumento | SICU</title>
+	<title>Crear prestamo | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -65,13 +65,13 @@
 				<li class="btn-bl">
 					<a href="instrumentos.html"><i class="fas fa-guitar"></i>Instrumentos</a>
 				</li>
-				<li class="btn-bl seleccionado">
+				<li class="btn-bl">
 					<a href="instrumentos-registrar.html"><i class="fas fa-plus"></i>Registrar Instrumento</a>
 				</li>
 				<li class="btn-bl">
 					<a href="prestamos.html"><i class="fas fa-clipboard-list"></i>Prestamos</a>
 				</li>
-				<li class="btn-bl">
+				<li class="btn-bl seleccionado">
 					<a href="prestamos-registrar.html"><i class="fas fa-notes-medical"></i>Crear Prestamo</a>
 				</li>
 			</ul>
@@ -82,41 +82,64 @@
 	<section class="contenedor-principal">
 		<article class="carta">
 			<div class="titulo">
-				<h4>Registrar nuevo Instrumento</h4>
+				<h4>Contrato de prestamo de Instrumento musical</h4>
 			</div>
-
 			<div class="cuerpo">
 				<form action="" method="">
-					<div>
-						<p><b>Instrumento:</b></p>
-						<input type="text" name="instrumento" placeholder="Ej: Tambor de Gaita">
+					<div class="grid-line">
+						<h5>Datos del solicitante:</h5><a href="#">(Seleccionar)</a>
 					</div>
 					
 					<div>
-						<p><b>Codigo/Identificador:</b></p>
-						<input type="text" name="codigo" placeholder="Ej: TG001">
+						<p><b>Nombre:</b></p>
+						<input type="text" name="name" placeholder="Ej: Simón">
 					</div>
 					
 					<div>
-						<p><b>Clasificación:</b></p>
-						<select name="clasificacion">
+						<p><b>Apellido:</b></p>
+						<input type="text" name="apellido" placeholder="Ej: Rodriguez">
+					</div>
+
+					<div>
+						<p><b>Cédula:</b></p>
+						<input type="text" name="cedula" placeholder="Ej: 11.222.333">
+					</div>
+					
+					<div>
+						<p><b>Clase:</b></p>
+						<select name="clase">
 							<option>Seleccionar</option>
-							<option>Cuerda</option>
-							<option>Electrico</option>
-							<option>Percusión</option>
-							<option>Viento</option>
+							<option>Estudiante</option>
+							<option>Docente</option>
+							<option>Obrero</option>
+							<option>Administrativo</option>
 						</select>
 					</div>
-					
+
 					<div>
-						<p><b>Marca (si posee):</b></p>
-						<input type="text" name="marca" placeholder="Ej: Marca">
+						<p><b>Correo electrónico:</b></p>
+						<input type="text" name="correo" placeholder="Ej: ejemplo@email.com">
 					</div>
 					
 					<div>
-						<p><b>Disponibilidad:</b></p>
-						<label><input type="radio" name="disponibilidad" value="1">Disponible</label>
-						<label><input type="radio" name="disponibilidad" value="0">No Disponible</label>
+						<p><b>Teléfono:</b></p>
+						<input type="text" name="telefono" placeholder="Ej: 0416-12345678">
+					</div>
+
+					<div class="grid-line">
+						<h5>Instrumentos:</h5><a href="#">(Seleccionar)</a>
+					</div>
+					
+					<div class="grid-line">
+						<ul style="padding: 10px 20px;">
+							<li>Guitarra G02</li>
+							<li>Tambor T01</li>
+						</ul>
+					</div>
+
+					<div>
+						<p><b>Fecha limite de devolución:</b></p>
+						<input type="date" name="fecha_limite">
 					</div>
 					
 					<div class="grid-line">

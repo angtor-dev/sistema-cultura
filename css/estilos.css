@@ -265,9 +265,30 @@ i {
 	margin:20px 20px 0 0;
 }
 
+.contenedor-principal .carta .cuerpo h5 {
+	font-size: 1.2rem;
+	display: inline-block;
+	margin-top: 10px;
+}
+
 .contenedor-principal .carta .cuerpo p {
 	font-size: 1rem;
 	line-height: 28px;
+}
+
+.contenedor-principal .carta .cuerpo p .entregado {
+	color: #00DD00;
+	font-weight: bold;
+}
+
+.contenedor-principal .carta .cuerpo p .pendiente {
+	color: #FFCC00;
+	font-weight: bold;
+}
+
+.contenedor-principal .carta .cuerpo p .retrasado {
+	color: #FF0000;
+	font-weight: bold;
 }
 
 /*Formularios*/
@@ -394,14 +415,18 @@ i {
 }
 
 .contenedor-principal .carta .tabla.instrumentos th:nth-child(2) {
-	width: 45%;
+	width: 35%;
 }
 
 .contenedor-principal .carta .tabla.instrumentos th:nth-child(3) {
-	width: 30%;
+	width: 20%;
 }
 
 .contenedor-principal .carta .tabla.instrumentos th:nth-child(4) {
+	width: 20%;
+}
+
+.contenedor-principal .carta .tabla.instrumentos th:nth-child(5) {
 	width: 5%;
 }
 
