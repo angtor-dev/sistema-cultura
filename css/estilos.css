@@ -238,6 +238,16 @@ i {
 	border: 0 solid transparent;
 	cursor: pointer;
 	outline: none;
+	transition: .3s;
+}
+
+.contenedor-principal .carta .boton:hover {
+	filter: brightness(1.1);
+}
+
+.contenedor-principal .carta .boton:active {
+	filter: brightness(1.2);
+	transition: 0s;
 }
 
 .contenedor-principal .carta .boton i {
