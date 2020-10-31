@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/all.min.css"> <!-- Iconos de fontawesome -->
 
 	<script type="text/javascript" src="js/principal.js"></script>
+	<script type="text/javascript" src="js/validaciones.js"></script> <!-- Para validar los formularios con js -->
 </head>
 <body>
 	<!-- Cabecera Principal -->
@@ -80,7 +81,7 @@
 			</div>
 
 			<div class="cuerpo">
-				<form action="" method="">
+				<form action="" method="" onsubmit="return validar()">
 					<div>
 						<p><b>Nombre del grupo:</b></p>
 						<input type="text" name="nombre" placeholder="Ej: Naguará e' Gaita">
@@ -147,7 +148,12 @@
 					<span>Cambiar Clave</span>
 				</button>
 				<hr>
-				<button class="boton"> <!-- Sección 2: Sistema -->
+				<button class="boton"> <!-- Sección 2: Reportes -->
+					<i class="fas fa-file-pdf"></i>
+					<span>Generar reportes</span>
+				</button>
+				<hr>
+				<button class="boton"> <!-- Sección 3: Sistema -->
 					<i class="fas fa-cog"></i>
 					<span>Ajustes del Sistema</span>
 				</button>
@@ -177,7 +183,7 @@
 					</button>
 				</div>
 				<hr>
-				<button class="boton"> <!-- Sección 3: Sesión -->
+				<button class="boton"> <!-- Sección 4: Sesión -->
 					<i class="fas fa-power-off"></i>
 					<span>
 						<p>Cerrar Sesión</p>

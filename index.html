@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/iniciar-sesion.css">
 
 	<script type="text/javascript" src="js/iniciar-sesion.js"></script>
+	<script type="text/javascript" src="js/validaciones.js"></script> <!-- Para validar los formularios con js -->
 </head>
 <body>
 	<div class="fondo">
@@ -19,7 +20,7 @@
 
 				<span class="login-text">INICIAR SESIÓN</span>
 
-				<form class="formulario" action="instrumentos.html" method="post"> <!-- Formulario -->
+				<form class="formulario" action="instrumentos.html" method="post" onsubmit="return validar()"> <!-- Formulario -->
 					<span>CORREO ELECTRÓNICO</span>
 					<input type="email" name="correo" placeholder="tucorreo@email.com" autofocus="on">
 
