@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crear prestamo | SICU</title>
+	<title>Categorías | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/all.min.css"> <!-- Iconos de fontawesome -->
 
 	<script type="text/javascript" src="js/principal.js"></script>
-	<script type="text/javascript" src="js/validaciones.js"></script> <!-- Para validar los formularios con js -->
 </head>
 <body>
 	<!-- Cabecera Principal -->
@@ -19,25 +18,25 @@
 		<nav> <!-- Botones de navegación -->
 			<ul>
 				<li class="btn-aux">&nbsp;</li>
-				<li class="btn-h sel-izq"> <!-- Usuarios -->
+				<li class="btn-h"> <!-- Usuarios -->
 					<a href="usuarios.html">
 						<i class="fas fa-user-circle"></i>
 						<span>Usuarios</span>
 					</a>
 				</li>
-				<li class="btn-h seleccionado"> <!-- Instrumentos -->
+				<li class="btn-h sel-izq"> <!-- Instrumentos -->
 					<a href="instrumentos.html">
 						<i class="fas fa-guitar"></i>
 						<span>Instrumentos</span>
 					</a>
 				</li>
-				<li class="btn-h sel-der"> <!-- Integrantes -->
+				<li class="btn-h seleccionado"> <!-- Integrantes -->
 					<a href="integrantes.html">
 						<i class="fas fa-male"></i>
 						<span>Integrantes</span>
 					</a>
 				</li>
-				<li class="btn-h"> <!-- Grupos -->
+				<li class="btn-h sel-der"> <!-- Grupos -->
 					<a href="grupos.html">
 						<i class="fas fa-users"></i>
 						<span>Grupos</span>
@@ -64,19 +63,13 @@
 		<nav>
 			<ul>
 				<li class="btn-bl">
-					<a href="instrumentos.html"><i class="fas fa-guitar"></i>Instrumentos</a>
+					<a href="integrantes.html"><i class="fas fa-male"></i>Integrantes</a>
 				</li>
 				<li class="btn-bl">
-					<a href="ejemplares.html"><i class="fas fa-guitar"></i>Ejemplares</a>
-				</li>
-				<li class="btn-bl">
-					<a href="instrumentos-registrar.html"><i class="fas fa-plus"></i>Registrar Instrumento</a>
-				</li>
-				<li class="btn-bl">
-					<a href="prestamos.html"><i class="fas fa-clipboard-list"></i>Prestamos</a>
+					<a href="integrantes-registrar.html"><i class="fas fa-plus"></i>Registrar Integrante</a>
 				</li>
 				<li class="btn-bl seleccionado">
-					<a href="prestamos-registrar.html"><i class="fas fa-notes-medical"></i>Crear Prestamo</a>
+					<a href="categorias.html"><i class="fas fa-address-card"></i>Categorias</a>
 				</li>
 			</ul>
 		</nav>
@@ -86,79 +79,23 @@
 	<section class="contenedor-principal">
 		<article class="carta">
 			<div class="titulo">
-				<h4>Contrato de prestamo de Instrumento musical</h4>
+				<h4>Gestionar Categorias</h4>
+				<button class="boton" type="button">
+					<i class="fas fa-plus"></i><span>Añadir nueva categoria</span>
+				</button>
 			</div>
 			<div class="cuerpo">
-				<form action="" method="" onsubmit="return validar()">
-					<div class="grid-line">
-						<h5>Datos del solicitante:</h5><a href="#">(Seleccionar)</a>
-					</div>
-					
-					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="name" placeholder="Ej: Simón">
-					</div>
-					
-					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodriguez">
-					</div>
+				<h5>Estudiante</h5>
+				<p><b>Cantidad de estudiantes:</b> 45</p>
 
-					<div>
-						<p><b>Cédula:</b></p>
-						<input type="text" name="cedula" placeholder="Ej: 11.222.333">
-					</div>
-					
-					<div>
-						<p><b>Clase:</b></p>
-						<select name="clase">
-							<option>Seleccionar</option>
-							<option>Estudiante</option>
-							<option>Docente</option>
-							<option>Obrero</option>
-							<option>Administrativo</option>
-						</select>
-					</div>
+				<h5>Docente</h5>
+				<p><b>Cantidad de docentes:</b> 13</p>
 
-					<div>
-						<p><b>Correo electrónico:</b></p>
-						<input type="text" name="correo" placeholder="Ej: ejemplo@email.com">
-					</div>
-					
-					<div>
-						<p><b>Teléfono:</b></p>
-						<input type="text" name="telefono" placeholder="Ej: 0416-12345678">
-					</div>
+				<h5>Obrero</h5>
+				<p><b>Cantidad de obreros:</b> 5</p>
 
-					<br>
-					<div class="grid-line">
-						<h5>Instrumentos:</h5><a href="#">(Seleccionar)</a>
-					</div>
-					
-					<div class="grid-line">
-						<ul style="padding: 10px 20px;">
-							<li>Guitarra G02</li>
-							<li>Tambor T01</li>
-						</ul>
-					</div>
-
-					<div>
-						<br>
-						<p><b>Fecha limite de devolución:</b></p>
-						<input type="date" name="fecha_limite">
-					</div>
-
-					<div>
-						<br>
-						<p><b>Observaciones:</b></p>
-						<textarea></textarea>
-					</div>
-					
-					<div class="grid-line">
-						<button class="boton" type="submit"><i class="fas fa-check"></i>Guardar</button>
-						<button class="boton cancelar" type="button" value="instrumentos"><i class="fas fa-times"></i>Cancelar</button>
-					</div>
-				</form>
+				<h5>Administrativo</h5>
+				<p><b>Cantidad de administrativos:</b> 21</p>
 			</div>
 		</article>
 	</section>

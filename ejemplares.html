@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crear prestamo | SICU</title>
+	<title>Instrumentos | SICU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="Shortcut Icon" href="img/favicon.png">
@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/all.min.css"> <!-- Iconos de fontawesome -->
 
 	<script type="text/javascript" src="js/principal.js"></script>
-	<script type="text/javascript" src="js/validaciones.js"></script> <!-- Para validar los formularios con js -->
 </head>
 <body>
 	<!-- Cabecera Principal -->
@@ -66,7 +65,7 @@
 				<li class="btn-bl">
 					<a href="instrumentos.html"><i class="fas fa-guitar"></i>Instrumentos</a>
 				</li>
-				<li class="btn-bl">
+				<li class="btn-bl seleccionado">
 					<a href="ejemplares.html"><i class="fas fa-guitar"></i>Ejemplares</a>
 				</li>
 				<li class="btn-bl">
@@ -75,7 +74,7 @@
 				<li class="btn-bl">
 					<a href="prestamos.html"><i class="fas fa-clipboard-list"></i>Prestamos</a>
 				</li>
-				<li class="btn-bl seleccionado">
+				<li class="btn-bl">
 					<a href="prestamos-registrar.html"><i class="fas fa-notes-medical"></i>Crear Prestamo</a>
 				</li>
 			</ul>
@@ -85,81 +84,80 @@
 	<!-- Contenido Principal -->
 	<section class="contenedor-principal">
 		<article class="carta">
-			<div class="titulo">
-				<h4>Contrato de prestamo de Instrumento musical</h4>
-			</div>
-			<div class="cuerpo">
-				<form action="" method="" onsubmit="return validar()">
-					<div class="grid-line">
-						<h5>Datos del solicitante:</h5><a href="#">(Seleccionar)</a>
-					</div>
-					
-					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="name" placeholder="Ej: Simón">
-					</div>
-					
-					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodriguez">
-					</div>
-
-					<div>
-						<p><b>Cédula:</b></p>
-						<input type="text" name="cedula" placeholder="Ej: 11.222.333">
-					</div>
-					
-					<div>
-						<p><b>Clase:</b></p>
-						<select name="clase">
-							<option>Seleccionar</option>
-							<option>Estudiante</option>
-							<option>Docente</option>
-							<option>Obrero</option>
-							<option>Administrativo</option>
-						</select>
-					</div>
-
-					<div>
-						<p><b>Correo electrónico:</b></p>
-						<input type="text" name="correo" placeholder="Ej: ejemplo@email.com">
-					</div>
-					
-					<div>
-						<p><b>Teléfono:</b></p>
-						<input type="text" name="telefono" placeholder="Ej: 0416-12345678">
-					</div>
-
-					<br>
-					<div class="grid-line">
-						<h5>Instrumentos:</h5><a href="#">(Seleccionar)</a>
-					</div>
-					
-					<div class="grid-line">
-						<ul style="padding: 10px 20px;">
-							<li>Guitarra G02</li>
-							<li>Tambor T01</li>
-						</ul>
-					</div>
-
-					<div>
-						<br>
-						<p><b>Fecha limite de devolución:</b></p>
-						<input type="date" name="fecha_limite">
-					</div>
-
-					<div>
-						<br>
-						<p><b>Observaciones:</b></p>
-						<textarea></textarea>
-					</div>
-					
-					<div class="grid-line">
-						<button class="boton" type="submit"><i class="fas fa-check"></i>Guardar</button>
-						<button class="boton cancelar" type="button" value="instrumentos"><i class="fas fa-times"></i>Cancelar</button>
-					</div>
-				</form>
-			</div>
+			<table class="tabla ejemplares">
+				<tr>
+					<th>Código</th>
+					<th>Instrumento</th>
+					<th>Marca</th>
+					<th>Disp.</th>
+				</tr>
+				<tr>
+					<td>G01</td>
+					<td>Guitarra</td>
+					<td>Helix</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>G02</td>
+					<td>Guitarra</td>
+					<td>Generica</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>C01</td>
+					<td>Cuatro</td>
+					<td>No posee</td>
+					<td><i class="fas fa-times-circle"></i></td>
+				</tr>
+				<tr>
+					<td>C02</td>
+					<td>Cuatro</td>
+					<td>No posee</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>C03</td>
+					<td>Cuatro</td>
+					<td>Veneins</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>M01</td>
+					<td>Mandolina</td>
+					<td>Mandala</td>
+					<td><i class="fas fa-times-circle"></i></td>
+				</tr>
+				<tr>
+					<td>TG01</td>
+					<td>Tambor de Gaita</td>
+					<td>San Simón</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>TG02</td>
+					<td>Tambor de Gaita</td>
+					<td>San Simón</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>F01</td>
+					<td>Furro</td>
+					<td>Artesanal</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>T01</td>
+					<td>Teclado</td>
+					<td>No posee</td>
+					<td><i class="fas fa-check-circle"></i></td>
+				</tr>
+				<tr>
+					<td>P01</td>
+					<td>Piano</td>
+					<td>Glorium</td>
+					<td><i class="fas fa-times-circle"></i></td>
+				</tr>
+			</table>
 		</article>
 	</section>
 

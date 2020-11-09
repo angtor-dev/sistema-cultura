@@ -421,30 +421,39 @@ i {
 
 /*Tabla de Instrumentos*/
 .contenedor-principal .carta .tabla.instrumentos th:nth-child(1) {
-	width: 20%;
+	width: 50%;
 }
 
 .contenedor-principal .carta .tabla.instrumentos th:nth-child(2) {
-	width: 35%;
+	width: 40%;
 }
 
 .contenedor-principal .carta .tabla.instrumentos th:nth-child(3) {
+	width: 10%;
+}
+
+/*Tabla de Ejemplares*/
+.contenedor-principal .carta .tabla.ejemplares th:nth-child(1) {
 	width: 20%;
 }
 
-.contenedor-principal .carta .tabla.instrumentos th:nth-child(4) {
-	width: 20%;
+.contenedor-principal .carta .tabla.ejemplares th:nth-child(2) {
+	width: 50%;
 }
 
-.contenedor-principal .carta .tabla.instrumentos th:nth-child(5) {
+.contenedor-principal .carta .tabla.ejemplares th:nth-child(3) {
+	width: 25%;
+}
+
+.contenedor-principal .carta .tabla.ejemplares th:nth-child(4) {
 	width: 5%;
 }
 
-.contenedor-principal .carta .tabla.instrumentos td .fa-check-circle {
+.contenedor-principal .carta .tabla.ejemplares td .fa-check-circle {
 	color: #00DD00;
 }
 
-.contenedor-principal .carta .tabla.instrumentos td .fa-times-circle {
+.contenedor-principal .carta .tabla.ejemplares td .fa-times-circle {
 	color: #FF0000;
 }
 
