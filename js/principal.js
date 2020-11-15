@@ -86,3 +86,8 @@ function cambiar_tema(tema) {
 function cancelar_registro(pagina) {
 	window.location.href = pagina + ".html";
 }
+
+//Funcion para avisar que el modulo de reportes se encuentra en construccion
+function reportes() {
+	alert('Este modulo no esta disponible, aun se encuentra en construcción.');
+}

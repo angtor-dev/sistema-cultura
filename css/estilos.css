@@ -333,6 +333,10 @@ i {
 	margin: 15px 5px;
 }
 
+.contenedor-principal .carta .cuerpo form input[disabled] {
+	border-color: #555;
+}
+
 .contenedor-principal .carta .cuerpo form textarea {
 	border: 1px solid #000;
 	border-bottom: 3px solid #000;
@@ -662,8 +666,8 @@ i {
 	}
 }
 
-/*Pantallas menores de 915px de ancho*/
-@media only screen and (max-width: 915px) {
+/*Pantallas menores de 1050px de ancho*/
+@media only screen and (max-width: 1050px) {
 	/*Ajustar cabecera*/
 	#cabecera-principal nav ul li a {
 		padding: 0;

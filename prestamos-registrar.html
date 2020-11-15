@@ -49,6 +49,12 @@
 						<span>Actividades</span>
 					</a>
 				</li>
+				<li class="btn-h"> <!-- Reportes -->
+					<a href="#" onclick="reportes()">
+						<i class="fas fa-file-pdf"></i>
+						<span>Reportes</span>
+					</a>
+				</li>
 				<li class="btn-aux">&nbsp;</li>
 			</ul>
 		</nav>
@@ -91,28 +97,18 @@
 			<div class="cuerpo">
 				<form action="" method="" onsubmit="return validar()">
 					<div class="grid-line">
-						<h5>Datos del solicitante:</h5><a href="#">(Seleccionar)</a>
-					</div>
-					
-					<div>
-						<p><b>Nombre:</b></p>
-						<input type="text" name="name" placeholder="Ej: Simón">
-					</div>
-					
-					<div>
-						<p><b>Apellido:</b></p>
-						<input type="text" name="apellido" placeholder="Ej: Rodriguez">
+						<h5>Datos del solicitante:</h5>
 					</div>
 
 					<div>
-						<p><b>Cédula:</b></p>
+						<p><b>Cédula: </b><a href="#">Buscar <i class="fas fa-search"></i></a></p>
 						<input type="text" name="cedula" placeholder="Ej: 11.222.333">
 					</div>
 					
 					<div>
 						<p><b>Clase:</b></p>
-						<select name="clase">
-							<option>Seleccionar</option>
+						<select name="clase" disabled="">
+							<option></option>
 							<option>Estudiante</option>
 							<option>Docente</option>
 							<option>Obrero</option>
@@ -121,13 +117,23 @@
 					</div>
 
 					<div>
-						<p><b>Correo electrónico:</b></p>
-						<input type="text" name="correo" placeholder="Ej: ejemplo@email.com">
+						<p><b>Nombre:</b></p>
+						<input type="text" name="name" disabled>
 					</div>
 					
 					<div>
 						<p><b>Teléfono:</b></p>
-						<input type="text" name="telefono" placeholder="Ej: 0416-12345678">
+						<input type="text" name="telefono" disabled>
+					</div>
+
+					<div>
+						<p><b>Apellido:</b></p>
+						<input type="text" name="apellido" disabled>
+					</div>
+					
+					<div>
+						<p><b>Correo electrónico:</b></p>
+						<input type="text" name="correo" disabled>
 					</div>
 
 					<br>
@@ -187,16 +193,7 @@
 					<span>Cambiar Clave</span>
 				</button>
 				<hr>
-				<button class="boton"> <!-- Sección 2: Reportes -->
-					<i class="fas fa-file-pdf"></i>
-					<span>Generar reportes</span>
-				</button>
-				<hr>
 				<button class="boton"> <!-- Sección 3: Sistema -->
-					<i class="fas fa-cog"></i>
-					<span>Ajustes del Sistema</span>
-				</button>
-				<button class="boton">
 					<i class="fas fa-info-circle"></i>
 					<span>
 						<p>Ayuda</p>
